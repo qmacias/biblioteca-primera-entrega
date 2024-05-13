@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca online para consultar libros">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../../assets/css/animations.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/css/main_styles.css" crossorigin="anonymous">
+
+    <title>BO Books | Ingresar</title>
+
+    <!--SCRIPT LOGIN-->
+    <script type="module" src="../../assets/js/log_in.js"></script>
+
+    <style>
+        #container {
+            text-align: center;
+        }
+
+        button {
+            font-size: 1rem;
+        }
+
+        form h2 {
+            color: var(--color5);
+        }
+
+        input:focus,
+        button:focus,
+        select:focus {
+            outline: 1px solid var(--color5);
+        }
+
+        button,
+        input input::placeholder {
+            color: var(--color5);
+            font-family: Inter, sans-serif;
+        }
+
+        label {
+            opacity: 0.8;
+            color: white;
+            background-color: var(--color5);
+            box-shadow: 0px 2px 15px -3px rgba(0, 0, 0, 0.1), 2px 0px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .boxx {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            height: 370px;
+            border-radius: 10px;
+        }
+
+        .inner-boxx {
+            position: absolute;
+            width: calc(100% - 3.7rem);
+            height: calc(100% - 3.7rem);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* background-color: tomato; */
+        }
+    </style>
+
+</head>
+
+<body class="bg2">
+    <div id="container">
+        <main>
+            <div class="boxx bg1 border bd5">
+                <div class="inner-boxx">
+                    <!-- Cambiar por "post" en el futuro!-->
+                    <form id="login-form" class="flex col" action="../../index.html" method="get"> <!--CAMBIADO A POST-->
+                        <h2 style="margin-bottom: 5px;">Ingresar</h2>
+
+                        <label class="box border bd5" for="username">Usuario</label>
+
+                        <input class="box bg1 border bd5" style="padding: 10.5px;" type="text" id="username"
+                            name="username" placeholder="Usuario">
+
+                        <label class="box border bd5" for="password">Contraseña</label>
+
+                        <input class="box bg1 border bd5" style="padding: 10.5px;" type="password" id="password"
+                            name="password" placeholder="Contraseña">
+
+                        <button class="box border bd5" style="padding: 9px;" type="submit">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>

@@ -1,0 +1,110 @@
+header,
+footer,
+figure,
+section#hero,
+main section h2 {
+    box-shadow: 0px 2px 15px -3px rgba(0, 0, 0, 0.1), 2px 0px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+
+/*------------
+    Header    
+------------*/
+
+header nav ul li:first-child a {
+    color: var(--color9);
+    transition: color 0.1s ease-in-out, transform 0.2s ease-in-out;
+}
+
+header nav ul li:first-child a:hover {
+    color: var(--color6);
+    transform: translateY(-0.6px);
+}
+
+header nav ul li:nth-child(2) a,
+header nav ul li:nth-child(3) a,
+header nav ul li:nth-child(4) a,
+header nav ul li:last-child a {
+    color: white;
+    background-color: var(--color5);
+    box-shadow: 0px 2px 15px -3px rgba(0, 0, 0, 0.1), 2px 0px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+header nav ul li:nth-child(2) a:hover,
+header nav ul li:nth-child(3) a:hover,
+header nav ul li:nth-child(4) a:hover,
+header nav ul li:last-child a:hover {
+    color: whitesmoke;
+    background-color: var(--color4);
+    box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.1), 8px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+
+/*----------
+    Hero    
+----------*/
+
+section#hero div a {
+    color: whitesmoke;
+    background-color: var(--color6);
+    box-shadow: 0px 2px 15px -3px rgba(0, 0, 0, 0.1), 2px 0px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+section#hero div a:hover {
+    color: white;
+    background-color: var(--color5);
+    box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.1), 8px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+
+/*-------------
+    Popular    
+-------------*/
+
+section#popular ul li figure img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+section#popular ul:hover> :not(:hover) img {
+    opacity: 0.9;
+}
+
+section#popular ul li figure {
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+section#popular ul li figure:hover {
+    transform: translateY(-0.7px);
+    box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.1), 8px 0px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+section#popular ul li figure figcaption {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+section#popular ul li figure:hover figcaption {
+    opacity: 1;
+}
+
+
+/*--------------
+    Ingresar    
+--------------*/
+
+form#login-form button,
+form#signup-form button {
+    color: whitesmoke;
+    background-color: var(--color4);
+    box-shadow: 0px 2px 15px -3px rgba(0, 0, 0, 0.1), 2px 0px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+form#login-form button:hover,
+form#signup-form button:hover {
+    color: white;
+    background-color: var(--color5);
+    box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.1), 8px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}

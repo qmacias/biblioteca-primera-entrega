@@ -1,0 +1,447 @@
+/* Fuente del sitio */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* Paleta de colores */
+
+:root {
+    /*
+        https://coolors.co/palette/e3f2fd-bbdefb-90caf9-64b5f6-42a5f5-2196f3-1e88e5-1976d2-1565c0-0d47a1
+    */
+    --color1: #A9D6E5;
+    --color2: #82b6ca;
+    --color3: #61A5C2;
+    --color4: #468FAF;
+    --color5: #2C7DA0;
+    --color6: #2A6F97;
+    --color7: #014F86;
+    --color8: #01497C;
+    --color9: #013A63;
+    --color10: #012A4A;
+}
+
+
+/* Colores de fuente */
+
+.c1 {
+    color: var(--color1);
+}
+
+.c2 {
+    color: var(--color2);
+}
+
+.c3 {
+    color: var(--color3);
+}
+
+.c4 {
+    color: var(--color4);
+}
+
+.c5 {
+    color: var(--color5);
+}
+
+.c6 {
+    color: var(--color6);
+}
+
+.c7 {
+    color: var(--color7);
+}
+
+.c8 {
+    color: var(--color8);
+}
+
+.c9 {
+    color: var(--color9);
+}
+
+.c10 {
+    color: var(--color10);
+}
+
+
+/* Colores de borde */
+
+.bd1 {
+    border-color: var(--color1);
+}
+
+.bd2 {
+    border-color: var(--color2);
+}
+
+.bd3 {
+    border-color: var(--color3);
+}
+
+.bd4 {
+    border-color: var(--color4);
+}
+
+.bd5 {
+    border-color: var(--color5);
+}
+
+.bd6 {
+    border-color: var(--color6);
+}
+
+.bd7 {
+    border-color: var(--color7);
+}
+
+.bd8 {
+    border-color: var(--color8);
+}
+
+.bd9 {
+    border-color: var(--color9);
+}
+
+.bd10 {
+    border-color: var(--color10);
+}
+
+
+/* Colores de fondo */
+
+.bg1 {
+    background-color: var(--color1);
+}
+
+.bg2 {
+    background-color: var(--color2);
+}
+
+.bg3 {
+    background-color: var(--color3);
+}
+
+.bg4 {
+    background-color: var(--color4);
+}
+
+.bg5 {
+    background-color: var(--color5);
+}
+
+.bg6 {
+    background-color: var(--color6);
+}
+
+.bg7 {
+    background-color: var(--color7);
+}
+
+.bg8 {
+    background-color: var(--color8);
+}
+
+.bg9 {
+    background-color: var(--color9);
+}
+
+.bg10 {
+    background-color: var(--color10);
+}
+
+
+/* Estilo de caja */
+
+.box {
+    margin: 7px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+/* Estilo de borde */
+
+.border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+/* Sistema grid */
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-flow: column nowrap;
+}
+
+@media (min-width: 450px) {
+    .row {
+        flex-flow: row wrap;
+    }
+}
+
+
+/* Formato básico */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a,
+span {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    cursor: default;
+}
+
+button {
+    cursor: pointer;
+}
+
+a,
+button {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font: 1em/1.618 Inter, sans-serif;
+}
+
+
+/*------------
+    Header    
+------------*/
+
+/* header {
+    position: sticky;
+    top: 12px;
+    z-index: 1;
+} */
+
+@media (min-width: 450px) {
+    header nav ul li:first-child {
+        flex-basis: 100%;
+    }
+
+    header nav ul li:nth-child(2),
+    header nav ul li:nth-child(3),
+    header nav ul li:nth-child(4),
+    header nav ul li:last-child {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 650px) {
+
+    header nav ul li:nth-child(2),
+    header nav ul li:nth-child(3),
+    header nav ul li:nth-child(4),
+    header nav ul li:last-child {
+        flex-basis: 25%;
+    }
+}
+
+@media (min-width: 852px) {
+    header {
+        height: 8.6vh;
+    }
+
+    header nav ul li:nth-child(n) {
+        flex-basis: 10em;
+    }
+
+    header nav ul li:nth-last-child(2) {
+        margin-left: auto;
+    }
+}
+
+
+/*----------
+    Hero    
+----------*/
+
+section#hero {
+    position: relative;
+    padding: 0;
+}
+
+section#hero picture img {
+    border-radius: 9px !important;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+section#hero div {
+    padding: 20px;
+    border-radius: 9px !important;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(169, 214, 229, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+section#hero div h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--color8);
+}
+
+section#hero div p {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: var(--color8);
+}
+
+section#hero div p span {
+    display: inline;
+}
+
+section#hero div a {
+    font-size: 1.1em;
+    padding: 10px 20px;
+}
+
+@media (min-width: 540px) {
+    section#hero div h1 span {
+        display: inline;
+        white-space: nowrap;
+        margin-right: 0.25em !important;
+    }
+}
+
+@media (min-width: 736px) {
+    section#hero div {
+        height: 85.8vh;
+    }
+
+    section#hero div {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 738px) {
+    section#hero div p span {
+        display: block;
+    }
+}
+
+
+/*-------------
+    Popular    
+-------------*/
+
+section#popular h2 {
+    margin: 14px 7px 7px 7px;
+    padding: 11px;
+    border-radius: 10px;
+    color: var(--color9);
+}
+
+section#popular ul li figure {
+    position: relative;
+    margin: 7px;
+    padding: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section#popular ul li figure img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+section#popular ul li figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(169, 214, 229, 0.8);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: center;
+}
+
+section#popular ul li figure figcaption h3,
+section#popular ul li figure figcaption h4 {
+    margin: 0;
+    font-weight: 500;
+    color: var(--color10);
+}
+
+@media (min-width: 450px) {
+    section#popular ul li:nth-child(n) {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 650px) {
+    section#popular ul li:nth-child(n) {
+        flex-basis: 33.33%;
+    }
+}
+
+@media (min-width: 852px) {
+    section#popular ul li:nth-child(n) {
+        flex-basis: 25%;
+    }
+}
+
+@media (min-width: 1317px) {
+    section#popular ul li:nth-child(n) {
+        flex-basis: 16.665%;
+    }
+}
+
+
+/*------------
+    Footer    
+------------*/
+
+footer {
+    margin: 7px 7px 8px 7px;
+    padding: 11px;
+    border-radius: 10px;
+}
+
+footer p {
+    color: var(--color10);
+}
+
+@media (min-width: 380px) {
+    footer p span {
+        display: inline;
+        white-space: nowrap;
+        margin-right: 0.35em !important;
+    }
+}

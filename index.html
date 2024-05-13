@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca online para consultar libros">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./assets/css/animations.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main_styles.css" crossorigin="anonymous">
+
+    <title>BO Books | Inicio</title>
+
+    <style>
+        #container {
+            margin: 4.5px;
+            text-align: center;
+        }
+    </style>
+
+    <script type="module" src="./assets/js/link.js"></script>
+    <script type="module" src="./assets/js/libro.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+</head>
+
+<body class="bg2">
+    <div id="container" class="flex col">
+        <header class="box bg1 border bd5">
+            <nav>
+                <ul class="flex col row" id="ulColeccionLinks"></ul>
+            </nav>
+        </header>
+
+        <main class="flex col">
+            <section id="hero" class="flex row box bg1 border bd5">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1400px)"
+                        srcset="./assets/img/hero/hero_6720x4480_w_1400.webp">
+
+                    <source type="image/webp" media="(min-width: 1226px)"
+                        srcset="./assets/img/hero/hero_6720x4480_w_1226.webp">
+
+                    <source type="image/webp" media="(min-width: 1044px)"
+                        srcset="./assets/img/hero/hero_6720x4480_w_1044.webp">
+
+                    <source type="image/webp" media="(min-width: 861px)"
+                        srcset="./assets/img/hero/hero_6720x4480_w_861.webp">
+
+                    <source type="image/webp" media="(min-width: 670px)"
+                        srcset="./assets/img/hero/hero_6720x4480_w_670.webp">
+
+                    <source type="image/webp" media="(min-width: 492px)"
+                        srcset="./assets/img/hero/hero_6720x4480_w_492.webp">
+
+                    <source type="image/webp" media="(min-width: 200px)"
+                        srcset="./assets/img/hero/hero_6720x4480_w_200.webp">
+
+                    <img loading="eager" decoding="async" src="./assets/img/hero/hero_6720x4480_w_1400.webp"
+                        alt="An open book with a radiant light shining upon it, illuminating its pages.">
+                </picture>
+
+                <div class="flex col">
+                    <h1><span>Bienvenido a</span><span>BO Books</span></h1>
+
+                    <p>
+                        <span>
+                            ¡Sumérgete en historias fascinantes y aprende algo nuevo cada día!
+                        </span>
+
+                        <span>
+                            Encontrarás una amplia selección de libros en nuestra biblioteca online.
+                        </span>
+                    </p>
+
+                    <a class="box border bd5" href="#popular">Explorar la colección</a>
+                </div>
+            </section>
+
+            <section id="popular">
+                <h2 class="bg1 border bd5">Popular</h2>
+
+                <ul class="flex col row" id="ulColeccionLibros"></ul>
+            </section>
+        </main>
+
+        <footer class="bg1 border bd5">
+            <p><span>Todos los derechos reservados</span><span>&copy; 2024</span></p>
+        </footer>
+    </div>
+</body>
+
+</html>
