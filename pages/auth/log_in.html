@@ -57,7 +57,7 @@
 
         main {
             width: 100%;
-            min-height: 100vh;
+            min-height: 89vh;
             overflow: hidden;
             padding: 2rem;
             display: flex;
@@ -88,11 +88,17 @@
 
 <body class="bg2">
     <div id="container">
+        <header class="box bg1 border bd5">
+            <nav>
+                <ul class="flex col row" id="ulColeccionLinks">
+                </ul>
+            </nav>
+        </header>
         <main>
             <div class="boxx bg1 border bd5">
                 <div class="inner-boxx">
                     <!-- Cambiar por "post" en el futuro!-->
-                    <form id="login-form" class="flex col" action="../../index.html" method="get"> <!--CAMBIADO A POST-->
+                    <form id="login-form" class="flex col" action="../../index.html" method="get">
                         <h2 style="margin-bottom: 5px;">Ingresar</h2>
 
                         <label class="box border bd5" for="username">Usuario</label>

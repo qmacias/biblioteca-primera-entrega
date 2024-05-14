@@ -1,4 +1,8 @@
+import Link from "./link.js"
+
 document.addEventListener("DOMContentLoaded", function () {
+  cargarLinks();
+
   const usernameInput = document.getElementById("username");
   const passwordInput = document.getElementById("password");
 
@@ -80,4 +84,28 @@ function cambiarEstilo(idElement, isError) {
       }
       break;
   }
+}
+
+function cargarLinks() {
+  let arrayLinks = [];
+
+  arrayLinks.push(new Link("../../index.html", "Biblioteca Online"));
+  arrayLinks.push(new Link("../../index.html", "Volver al inicio"));
+
+  let linksInnerHTML = "";
+
+  for(let link of arrayLinks){
+      let linkActual = "";
+
+      if (link.href == "#") {
+          linkActual = `<li><a class="box" href="${link.href}">${link.label}</a></li>`;
+      } else {
+          linkActual = `<li><a class="box border bd5" href="${link.href}">${link.label}</a></li>`;
+      }
+
+      linksInnerHTML += linkActual;
+  }
+
+
+  document.getElementById("ulColeccionLinks").innerHTML = linksInnerHTML;
 }
