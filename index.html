@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Biblioteca online para consultar libros">
 
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./assets/css/animations.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/main_styles.css" crossorigin="anonymous">
 
-    <title>BO Books | Inicio</title>
+    <title>Biblioteca Online| Inicio</title>
 
     <style>
         #container {
@@ -34,14 +34,14 @@
 
 <body class="bg2">
     <div id="container" class="flex col">
-        <header class="box bg1 border bd5">
+        <header id="index-header" class="bg1 border bd3">
             <nav>
                 <ul class="flex col row" id="ulColeccionLinks"></ul>
             </nav>
         </header>
 
         <main class="flex col">
-            <section id="hero" class="flex row box bg1 border bd5">
+            <section id="hero" class="flex row box bg1 border bd4">
                 <picture>
                     <source type="image/webp" media="(min-width: 1400px)"
                         srcset="./assets/img/hero/hero_6720x4480_w_1400.webp">
@@ -64,36 +64,50 @@
                     <source type="image/webp" media="(min-width: 200px)"
                         srcset="./assets/img/hero/hero_6720x4480_w_200.webp">
 
-                    <img loading="eager" decoding="async" src="./assets/img/hero/hero_6720x4480_w_1400.webp"
+                    <img loading="eager" decoding="async" src="./assets/img/hero/hero_6720x4480_w_1400"
                         alt="An open book with a radiant light shining upon it, illuminating its pages.">
                 </picture>
 
                 <div class="flex col">
-                    <h1><span>Bienvenido a</span><span>BO Books</span></h1>
+                    <h1>
+                        Biblioteca Online
+
+                        <span>
+                            Donde los sueños se vuelven realidad
+                        </span>
+                    </h1>
 
                     <p>
-                        <span>
-                            ¡Sumérgete en historias fascinantes y aprende algo nuevo cada día!
-                        </span>
+                        ¡Sumérgete en historias fascinantes y aprende algo nuevo cada día!
 
                         <span>
-                            Encontrarás una amplia selección de libros en nuestra biblioteca online.
+                            Encontrarás una amplia selección de libros en nuestra plataforma digital.
                         </span>
                     </p>
 
-                    <a class="box border bd5" href="#popular">Explorar la colección</a>
+                    <a class="box border bd3" href="#inventory">Explorar la colección</a>
                 </div>
             </section>
 
-            <section id="popular">
-                <h2 class="bg1 border bd5">Popular</h2>
+            <section id="inventory">
+                <div class="flex col bg1 border bd3">
+                    <h2>Inventario</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                        <span>
+                            Eos temporibus molestiae quas consequuntur labore inventore.
+                        </span>
+                    </p>
+                </div>
 
                 <ul class="flex col row" id="ulColeccionLibros"></ul>
             </section>
         </main>
 
-        <footer class="bg1 border bd5">
-            <p><span>Todos los derechos reservados</span><span>&copy; 2024</span></p>
+        <footer class="bg1 border bd3">
+            <p>Todos los derechos reservados <span>&copy; 2024</span></p>
         </footer>
     </div>
 </body>

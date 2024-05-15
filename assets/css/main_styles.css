@@ -241,39 +241,47 @@ body {
     z-index: 1;
 } */
 
+header#index-header {
+    margin: 9px 7px 6px 7px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 @media (min-width: 450px) {
-    header nav ul li:first-child {
+
+    header#index-header nav ul li:first-child,
+    header#index-header nav ul li:nth-child(2) {
         flex-basis: 100%;
     }
 
-    header nav ul li:nth-child(2),
-    header nav ul li:nth-child(3),
-    header nav ul li:nth-child(4),
-    header nav ul li:last-child {
+    header#index-header nav ul li:nth-child(3),
+    header#index-header nav ul li:nth-child(4),
+    header#index-header nav ul li:nth-child(5),
+    header#index-header nav ul li:last-child {
         flex-basis: 50%;
     }
 }
 
 @media (min-width: 650px) {
 
-    header nav ul li:nth-child(2),
-    header nav ul li:nth-child(3),
-    header nav ul li:nth-child(4),
-    header nav ul li:last-child {
-        flex-basis: 25%;
+    header#index-header nav ul li:nth-child(2),
+    header#index-header nav ul li:nth-child(3),
+    header#index-header nav ul li:nth-child(4) {
+        flex-basis: 33.33%;
+    }
+
+    header#index-header nav ul li:nth-child(5),
+    header#index-header nav ul li:last-child {
+        flex-basis: 50%;
     }
 }
 
-@media (min-width: 852px) {
-    header {
-        height: 8.6vh;
-    }
-
-    header nav ul li:nth-child(n) {
+@media (min-width: 1012px) {
+    header#index-header nav ul li:nth-child(n) {
         flex-basis: 10em;
     }
 
-    header nav ul li:nth-last-child(2) {
+    header#index-header nav ul li:nth-last-child(2) {
         margin-left: auto;
     }
 }
@@ -299,24 +307,29 @@ section#hero picture img {
 
 section#hero div {
     padding: 20px;
+    color: var(--color8);
     border-radius: 9px !important;
     align-items: center;
     justify-content: center;
-    background-color: rgba(169, 214, 229, 0.6);
+    background-color: rgba(169, 214, 229, 0.8);
     backdrop-filter: blur(5px);
 }
 
 section#hero div h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
-    color: var(--color8);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+section#hero div h1 span {
+    font-size: 0.75em;
+    font-weight: 400;
 }
 
 section#hero div p {
-    font-size: 1.2em;
-    font-weight: 500;
-    margin-bottom: 30px;
-    color: var(--color8);
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 section#hero div p span {
@@ -328,43 +341,39 @@ section#hero div a {
     padding: 10px 20px;
 }
 
-@media (min-width: 540px) {
-    section#hero div h1 span {
-        display: inline;
-        white-space: nowrap;
-        margin-right: 0.25em !important;
-    }
-}
-
 @media (min-width: 736px) {
-    section#hero div {
-        height: 85.8vh;
-    }
-
     section#hero div {
         flex-basis: 100%;
     }
 }
 
 @media (min-width: 738px) {
+    section#hero {
+        height: 85.9vh;
+    }
+
     section#hero div p span {
         display: block;
     }
 }
 
 
-/*-------------
-    Popular    
--------------*/
+/*----------------
+    Inventario    
+----------------*/
 
-section#popular h2 {
+/* section#inventory {
+    height: 100vh;
+} */
+
+section#inventory div {
     margin: 14px 7px 7px 7px;
-    padding: 11px;
+    padding: 12.5px;
     border-radius: 10px;
-    color: var(--color9);
+    color: var(--color8);
 }
 
-section#popular ul li figure {
+section#inventory ul li figure {
     position: relative;
     margin: 7px;
     padding: 14px;
@@ -372,13 +381,13 @@ section#popular ul li figure {
     overflow: hidden;
 }
 
-section#popular ul li figure img {
+section#inventory ul li figure img {
     display: block;
     width: 100%;
     border-radius: 8px;
 }
 
-section#popular ul li figure figcaption {
+section#inventory ul li figure figcaption {
     position: absolute;
     top: 0;
     left: 0;
@@ -392,34 +401,38 @@ section#popular ul li figure figcaption {
     justify-content: center;
 }
 
-section#popular ul li figure figcaption h3,
-section#popular ul li figure figcaption h4 {
+section#inventory ul li figure figcaption h3,
+section#inventory ul li figure figcaption h4 {
     margin: 0;
     font-weight: 500;
     color: var(--color10);
 }
 
-@media (min-width: 450px) {
-    section#popular ul li:nth-child(n) {
+section#inventory div p span {
+    display: inline;
+}
+
+@media (min-width: 400px) {
+    section#inventory ul li:nth-child(n) {
         flex-basis: 50%;
     }
 }
 
-@media (min-width: 650px) {
-    section#popular ul li:nth-child(n) {
-        flex-basis: 33.33%;
+@media (min-width: 738px) {
+    section#inventory div p span {
+        display: block;
     }
 }
 
-@media (min-width: 852px) {
-    section#popular ul li:nth-child(n) {
+@media (min-width: 800px) {
+    section#inventory ul li:nth-child(n) {
         flex-basis: 25%;
     }
 }
 
-@media (min-width: 1317px) {
-    section#popular ul li:nth-child(n) {
-        flex-basis: 16.665%;
+@media (min-width: 1600px) {
+    section#inventory ul li:nth-child(n) {
+        flex-basis: 12.5%;
     }
 }
 
@@ -441,7 +454,5 @@ footer p {
 @media (min-width: 380px) {
     footer p span {
         display: inline;
-        white-space: nowrap;
-        margin-right: 0.35em !important;
     }
 }

@@ -3,7 +3,7 @@ import Libro from "./libro.js"
 
 //Arreglar: Poner un boton en log_in.html para que el usuario pueda volver a index.html en caso de no querer ingresar, y ser invitado
 //Arreglar: Poner un boton en sign_up.html para que el usuario pueda volver a index.html en caso de no querer registrarse, y ser invitado
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
     cargarLinks();
     cargarLibros();
 });
@@ -12,20 +12,21 @@ function cargarLinks() {
     let arrayLinks = [];
 
     arrayLinks.push(new Link("#", "Biblioteca Online"));
-    arrayLinks.push(new Link("#popular", "Popular"));
-    arrayLinks.push(new Link("#contacto", "Contacto"));
+    arrayLinks.push(new Link("#inventory", "Inventario"));
+    arrayLinks.push(new Link("#services", "Servicios"));
+    arrayLinks.push(new Link("#contact", "Contacto"));
     arrayLinks.push(new Link("./pages/auth/log_in.html", "Ingresar"));
     arrayLinks.push(new Link("./pages/auth/sign_up.html", "Registrarse"));
 
     let linksInnerHTML = "";
 
-    for(let link of arrayLinks){
+    for (let link of arrayLinks) {
         let linkActual = "";
 
         if (link.href == "#") {
             linkActual = `<li><a class="box" href="${link.href}">${link.label}</a></li>`;
         } else {
-            linkActual = `<li><a class="box border bd5" href="${link.href}">${link.label}</a></li>`;
+            linkActual = `<li><a class="box border bd3" href="${link.href}">${link.label}</a></li>`;
         }
 
         linksInnerHTML += linkActual;
@@ -50,13 +51,17 @@ function cargarLibros() {
     arrayLibros.push(new Libro("./assets/img/book_10_900x1500.webp", "A Great Country", "Shilpi Somaya Gouda"));
     arrayLibros.push(new Libro("./assets/img/book_11_900x1500.webp", "The Secret", "Jack Reacher"));
     arrayLibros.push(new Libro("./assets/img/book_12_900x1500.webp", "Eragon", "Cristopher Paolini"));
+    arrayLibros.push(new Libro("./assets/img/book_13_900x1500.webp", "Butcher & Blackbird", "Brynne Weaver"));
+    arrayLibros.push(new Libro("./assets/img/book_14_900x1500.webp", "No Control", "Annie Wild"));
+    arrayLibros.push(new Libro("./assets/img/book_15_900x1500.webp", "The Canary Cowards", "Jescie Hall"));
+    arrayLibros.push(new Libro("./assets/img/book_16_900x1500.webp", "Gravitys Hammer", "Jerry Reynolds"));
 
     let librosInnerHTML = "";
 
-    for(let libro of arrayLibros){
+    for (let libro of arrayLibros) {
         let libroActual = `<li>
-                                <figure class="flex bg1 border bd5">
-                                    <img class="border bd3" loading="eager" decoding="async" src="${libro.portada}" alt="Descripción de la imagen">
+                                <figure class="flex bg1 border bd3">
+                                    <img class="border bd2" loading="eager" decoding="async" src="${libro.portada}" alt="${libro.titulo}, a book release by ${libro.autor}.">
                                     <figcaption class="flex col">
                                     <h3>${libro.titulo}</h3>
                                     <h4>${libro.autor}</h4>
