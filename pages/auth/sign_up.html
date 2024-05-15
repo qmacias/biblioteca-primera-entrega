@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Biblioteca online para consultar libros">
+    <meta name="description" content="Biblioteca Online. CAC FS PYTHON 2024">
 
     <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
@@ -18,37 +18,60 @@
     <link rel="stylesheet" href="../../assets/css/animations.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/css/main_styles.css" crossorigin="anonymous">
 
-    <title>BO Books | Registrarse</title>
+    <title>Biblioteca Online | Registrarse</title>
 
     <!--SCRIPT SIGN UP-->
     <script type="module" src="../../assets/js/sign_up.js"></script>
 
     <style>
         #container {
+            margin: 4.5px;
             text-align: center;
+        }
+
+        main {
+            min-height: 80.2vh;
+        }
+
+        header#form-header {
+            margin: 14px 7px 14px 7px;
+            padding: 5px;
+            border-radius: 10px;
+
         }
 
         button {
             font-size: 1rem;
         }
 
-        form h2 {
+        h2 {
+            margin-bottom: 5px;
             color: var(--color5);
+        }
+
+        input {
+            color: var(--color6);
         }
 
         input:focus,
         button:focus,
         select:focus {
-            outline: 1px solid var(--color5);
+            outline: 1px solid var(--color3);
         }
 
         button,
         select,
         optgroup,
-        input,
+        input[type="date"],
         input::placeholder {
-            color: var(--color5);
             font-family: Inter, sans-serif;
+        }
+
+        select,
+        optgroup,
+        input[type="date"],
+        input::placeholder {
+            color: var(--color4);
         }
 
         label {
@@ -78,7 +101,6 @@
 
         main {
             width: 100%;
-            min-height: 89vh;
             overflow: hidden;
             padding: 2rem;
             display: flex;
@@ -86,7 +108,7 @@
             justify-content: center;
         }
 
-        main .boxx {
+        main#signup-main .boxx {
             position: relative;
             width: 100%;
             max-width: 514px;
@@ -94,7 +116,7 @@
             border-radius: 10px;
         }
 
-        main .inner-boxx {
+        main#signup-main .inner-boxx {
             position: absolute;
             width: calc(100% - 3.1rem);
             height: calc(100% - 3.1rem);
@@ -112,13 +134,33 @@
             flex-basis: 100%;
         }
 
-        @media (min-width: 545px) {
+        @media (min-width: 450px) {
+            /*
+                Arreglar más adelante...
+                Se solapa con la media query
+                para .row (del main_styles.css)
+            */
 
+            main {
+                min-height: 87vh;
+            }
+
+            header#form-header nav ul {
+                justify-content: space-between;
+
+            }
+
+            header#form-header nav ul li {
+                flex-basis: 10em;
+            }
+        }
+
+        @media (min-width: 545px) {
             form#signup-form .flex.roww:nth-child(n) div {
                 flex-basis: 50%;
             }
 
-            main .boxx {
+            main#signup-main .boxx {
                 max-width: 514px;
                 height: 465px;
             }
@@ -128,63 +170,68 @@
 
 <body class="bg2">
     <div id="container">
-        <header class="box bg1 border bd5">
+        <header id="form-header" class="bg1 border bd3">
             <nav>
-                <ul class="flex col row" id="ulColeccionLinks">
+                <!-- Tiene .row (¡Cuidado!). No es igual que en el formulario de registro -->
+                <ul class="flex col row">
+                    <li><a class="box" href="#">Biblioteca Online</a></li>
+
+                    <li><a class="box border bd3" href="../../index.html">Volver al Inicio</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <div class="boxx bg1 border bd5">
+
+        <main id="signup-main">
+            <div class="boxx bg1 border bd3">
                 <div class="inner-boxx">
                     <!-- Cambiar por "post" en el futuro! -->
                     <form id="signup-form" class="flex col" action="../../index.html" method="get">
-                        <h2 style="margin-bottom: 5px;">Registrarse</h2>
+                        <h2>Registrarse</h2>
 
                         <div class="flex roww">
                             <div class="flex col">
-                                <label class="box border bd5" for="name">Nombre</label>
+                                <label class="box border bd3" for="name">Nombre</label>
 
-                                <input class="box bg1 border bd5" style="padding: 10px;" type="text" id="name"
+                                <input class="box bg1 border bd3" style="padding: 10px;" type="text" id="name"
                                     name="name" placeholder="Nombre">
                             </div>
 
                             <div class="flex col">
-                                <label class="box border bd5" for="surname">Apellido</label>
+                                <label class="box border bd3" for="surname">Apellido</label>
 
-                                <input class="box bg1 border bd5" style="padding: 10px;" type="text" id="surname"
+                                <input class="box bg1 border bd3" style="padding: 10px;" type="text" id="surname"
                                     name="surname" placeholder="Apellido">
                             </div>
                         </div>
 
                         <div class="flex roww">
                             <div class="flex col">
-                                <label class="box border bd5" for="username">Usuario</label>
+                                <label class="box border bd3" for="username">Usuario</label>
 
-                                <input class="box bg1 border bd5" style="padding: 10px;" type="text" id="username"
+                                <input class="box bg1 border bd3" style="padding: 10px;" type="text" id="username"
                                     name="username" placeholder="Usuario">
                             </div>
 
                             <div class="flex col">
-                                <label class="box border bd5" for="password">Contraseña</label>
+                                <label class="box border bd3" for="password">Contraseña</label>
 
-                                <input class="box bg1 border bd5" style="padding: 10px;" type="password" id="password"
+                                <input class="box bg1 border bd3" style="padding: 10px;" type="password" id="password"
                                     name="password" placeholder="Contraseña">
                             </div>
                         </div>
 
                         <div class="flex roww">
                             <div class="flex col">
-                                <label class="box border bd5" for="birthdate">Fecha de nacimiento</label>
+                                <label class="box border bd3" for="birthdate">Fecha de nacimiento</label>
 
-                                <input class="box bg1 border bd5" style="padding: 9px !important;" type="date"
+                                <input class="box bg1 border bd3" style="padding: 9px !important;" type="date"
                                     id="birthdate" name="birthdate">
                             </div>
 
                             <div class="flex col">
-                                <label class="box border bd5" for="country">País de residencia</label>
+                                <label class="box border bd3" for="country">País de residencia</label>
 
-                                <select class="box bg1 border bd5" style="padding: 10px;" id="country" name="country">
+                                <select class="box bg1 border bd3" style="padding: 10px;" id="country" name="country">
                                     <optgroup>
                                         <option value="" selected>
                                             Seleccionar...
@@ -199,11 +246,15 @@
                         </div>
 
                         <div class="flex col">
-                            <button class="box border bd5" style="padding: 10px;" type="submit">Registrarse</button>
+                            <button class="box border bd3" style="padding: 10px;" type="submit">Registrarse</button>
                         </div>
                     </form>
                 </div>
             </div>
         </main>
+
+        <!-- <footer class="bg1 border bd3">
+            <p>Todos los derechos reservados <span>&copy; 2024</span></p>
+        </footer> -->
     </div>
 </body>
