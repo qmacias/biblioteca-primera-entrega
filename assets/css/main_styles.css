@@ -184,6 +184,30 @@
     }
 }
 
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-4 {
+    order: 4;
+}
+
+.order-5 {
+    order: 5;
+}
+
+.order-6 {
+    order: 6;
+}
+
 
 /* Formato básico */
 
@@ -247,22 +271,69 @@ header#index-header {
     border-radius: 10px;
 }
 
+header#index-header nav ul {
+    display: none;
+}
+
+.hamburguer-menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin-top: 0.15rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: auto;
+    color: var(--color6);
+}
+
+/* Biblioteca Online */
+header#index-header nav ul li:first-child {
+    order: 1;
+}
+
+/* Inventario */
+header#index-header nav ul li:nth-child(2) {
+    order: 2;
+}
+
+/* Servicios */
+header#index-header nav ul li:nth-child(3) {
+    order: 3;
+}
+
+/* Contacto */
+header#index-header nav ul li:nth-child(4) {
+    order: 4;
+}
+
+/* Ingresar */
+header#index-header nav ul li:nth-child(5) {
+    order: 5;
+}
+
+/* Registrarse */
+header#index-header nav ul li:last-child {
+    order: 6;
+}
+
 @media (min-width: 450px) {
 
     header#index-header nav ul li:first-child,
-    header#index-header nav ul li:nth-child(2) {
+    header#index-header nav ul li:nth-child(3),
+    header#index-header nav ul li:nth-child(4) {
         flex-basis: 100%;
     }
 
+    header#index-header nav ul li:nth-child(2),
     header#index-header nav ul li:nth-child(3),
-    header#index-header nav ul li:nth-child(4),
     header#index-header nav ul li:nth-child(5),
     header#index-header nav ul li:last-child {
         flex-basis: 50%;
     }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 550px) {
 
     header#index-header nav ul li:nth-child(2),
     header#index-header nav ul li:nth-child(3),
@@ -271,8 +342,26 @@ header#index-header {
     }
 
     header#index-header nav ul li:nth-child(5),
-    header#index-header nav ul li:last-child {
+    header#index-header nav ul li:nth-child(6) {
         flex-basis: 50%;
+    }
+}
+
+@media (min-width: 750px) {
+    header#index-header nav ul {
+        display: flex;
+    }
+
+    .hamburguer-menu {
+        display: none;
+    }
+
+    header#index-header nav ul li:nth-child(2),
+    header#index-header nav ul li:nth-child(3),
+    header#index-header nav ul li:nth-child(4),
+    header#index-header nav ul li:nth-child(5),
+    header#index-header nav ul li:last-child {
+        flex-basis: 20%;
     }
 }
 
@@ -348,12 +437,14 @@ section#hero div a {
 }
 
 @media (min-width: 738px) {
-    section#hero {
-        height: 85.9vh;
-    }
-
     section#hero div p span {
         display: block;
+    }
+}
+
+@media (min-width: 1012px) {
+    section#hero {
+        height: 85.9vh;
     }
 }
 

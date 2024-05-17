@@ -1,10 +1,12 @@
 export default class Link {
     #href;
     #label;
+    #tabindex;
 
-    constructor(href, label) {
+    constructor(href, label, tabindex) {
         this.#href = href;
         this.#label = label;
+        this.#tabindex = tabindex
     }
 
     get href() {
@@ -21,5 +23,13 @@ export default class Link {
 
     set label(value) {
         this.#label = value;
+    }
+
+    get tabindex() {
+        return this.#tabindex;
+    }
+
+    set tabindex(value) {
+        this.#tabindex = value;
     }
 }

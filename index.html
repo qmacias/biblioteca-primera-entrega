@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="./assets/css/animations.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/main_styles.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
     <title>Biblioteca Online| Inicio</title>
 
@@ -36,6 +37,10 @@
     <div id="container" class="flex col">
         <header id="index-header" class="bg1 border bd3">
             <nav>
+                <button class="hamburguer-menu" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </button>
+
                 <ul class="flex col row" id="ulColeccionLinks"></ul>
             </nav>
         </header>
@@ -85,7 +90,9 @@
                         </span>
                     </p>
 
-                    <a class="box border bd3" href="#inventory">Explorar la colección</a>
+                    <a id="call-to-action" class="box border bd3" href="#inventory" tabindex="7">
+                        Explorar la colección
+                    </a>
                 </div>
             </section>
 
@@ -110,6 +117,56 @@
             <p>Todos los derechos reservados <span>&copy; 2024</span></p>
         </footer>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const signUpButton = document.querySelector('header#index-header nav ul li:nth-child(6) a');
+            const submitButton = document.querySelector('a#call-to-action');
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Tab") {
+                    if (document.activeElement === signUpButton) {
+                        event.preventDefault();
+                        submitButton.focus();
+                    } else if (document.activeElement === submitButton) {
+                        event.preventDefault();
+                        document.querySelector('header#index-header nav ul li:first-child a').focus();
+                    }
+                }
+            });
+        });
+
+        function toggleMenu() {
+            var ul = document.querySelector("#index-header nav ul");
+            var icon = document.querySelector("#index-header nav button i");
+
+            if (ul && ul.style.display === "flex") {
+                ul.style.display = "none";
+
+                icon.classList.replace('fa-times', 'fa-bars');
+            } else {
+                ul.style.display = "flex";
+
+                icon.classList.replace('fa-bars', 'fa-times');
+            }
+        }
+
+        window.addEventListener('resize', function () {
+            var screenWidth = window.innerWidth;
+            var ul = document.querySelector("#index-header nav ul");
+            var icon = document.querySelector("#index-header nav button i");
+
+            if (ul && screenWidth >= 750) {
+                ul.style.display = "flex";
+
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                ul.style.display = "none";
+
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+    </script>
 </body>
 
 </html>

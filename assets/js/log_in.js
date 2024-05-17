@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const passwordInput = document.getElementById("password");
 
   const submitButton = document.querySelector('button[type="submit"]');
-  submitButton.tabIndex = 3;
+  submitButton.tabIndex = 5;
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Tab") {

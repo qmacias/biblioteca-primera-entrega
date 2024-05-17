@@ -11,12 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
 function cargarLinks() {
     let arrayLinks = [];
 
-    arrayLinks.push(new Link("#", "Biblioteca Online"));
-    arrayLinks.push(new Link("#inventory", "Inventario"));
-    arrayLinks.push(new Link("#services", "Servicios"));
-    arrayLinks.push(new Link("#contact", "Contacto"));
-    arrayLinks.push(new Link("./pages/auth/log_in.html", "Ingresar"));
-    arrayLinks.push(new Link("./pages/auth/sign_up.html", "Registrarse"));
+    arrayLinks.push(new Link("#", "Biblioteca Online", 1));
+    arrayLinks.push(new Link("#inventory", "Inventario", 2));
+    arrayLinks.push(new Link("#services", "Servicios", 3));
+    arrayLinks.push(new Link("#contact", "Contacto", 4));
+    arrayLinks.push(new Link("./pages/auth/log_in.html", "Ingresar", 5));
+    arrayLinks.push(new Link("./pages/auth/sign_up.html", "Registrarse", 6));
 
     let linksInnerHTML = "";
 
@@ -24,9 +24,9 @@ function cargarLinks() {
         let linkActual = "";
 
         if (link.href == "#") {
-            linkActual = `<li><a class="box" href="${link.href}">${link.label}</a></li>`;
+            linkActual = `<li><a class="box" href="${link.href}" tabindex="${link.tabindex}">${link.label}</a></li>`;
         } else {
-            linkActual = `<li><a class="box border bd3" href="${link.href}">${link.label}</a></li>`;
+            linkActual = `<li><a class="box border bd3" href="${link.href}" tabindex="${link.tabindex}">${link.label}</a></li>`;
         }
 
         linksInnerHTML += linkActual;
