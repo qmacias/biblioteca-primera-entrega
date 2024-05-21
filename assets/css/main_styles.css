@@ -485,7 +485,7 @@ section#inventory div p span {
     display: inline;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
     section#inventory ul li:nth-child(n) {
         flex-basis: 50%;
     }
