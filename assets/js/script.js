@@ -42,11 +42,11 @@ function cargarLibros() {
     arrayLibros.push(new Libro("./assets/img/book_1_900x1500.webp", "The Demon of Unrest", "Erik Larson"));
     arrayLibros.push(new Libro("./assets/img/book_2_900x1500.webp", "Light to The Hills", "Bonnie Blaylock"));
     arrayLibros.push(new Libro("./assets/img/book_3_900x1500.webp", "Holly", "Stephen King"));
-    arrayLibros.push(new Libro("./assets/img/book_6_900x1500.webp", "Mercy and Grace", "Anoop Judge"));
+    arrayLibros.push(new Libro("./assets/img/book_4_900x1500.webp", "After Annie", "Anna Quindlen"));
     arrayLibros.push(new Libro("./assets/img/book_5_900x1500.webp", "The Lord of The Ring", "J.R.R. Tolkien"));
+    arrayLibros.push(new Libro("./assets/img/book_6_900x1500.webp", "Mercy and Grace", "Anoop Judge"));
     arrayLibros.push(new Libro("./assets/img/book_7_900x1500.webp", "Los Hijos de Eva", "Manuel Dorado"));
     arrayLibros.push(new Libro("./assets/img/book_8_900x1500.webp", "The Game and Other Stories", "Joe Baldwin"));
-    arrayLibros.push(new Libro("./assets/img/book_4_900x1500.webp", "After Annie", "Anna Quindlen"));
     arrayLibros.push(new Libro("./assets/img/book_9_900x1500.webp", "A Wrinkle in Time", "Madeleine L'engle"));
     arrayLibros.push(new Libro("./assets/img/book_10_900x1500.webp", "A Great Country", "Shilpi Somaya Gouda"));
     arrayLibros.push(new Libro("./assets/img/book_11_900x1500.webp", "The Secret", "Jack Reacher"));
