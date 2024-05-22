@@ -431,15 +431,15 @@ section#hero div a {
 }
 
 
-/*----------------
-    Inventario    
-----------------*/
+/*---------------
+    Inventory    
+---------------*/
 
 /* section#inventory {
     height: 100vh;
 } */
 
-section#inventory div {
+section#inventory header {
     margin: 14px 7px 7px 7px;
     padding: 12.5px;
     border-radius: 10px;
@@ -481,7 +481,7 @@ section#inventory ul li figure figcaption h4 {
     color: var(--color10);
 }
 
-section#inventory div p span {
+section#inventory header p span {
     display: inline;
 }
 
@@ -492,7 +492,7 @@ section#inventory div p span {
 }
 
 @media (min-width: 738px) {
-    section#inventory div p span {
+    section#inventory header p span {
         display: block;
     }
 }
@@ -514,26 +514,22 @@ section#inventory div p span {
     Services    
 --------------*/
 
-/* Encabezado */
-
-section#services div#encabezado {
+section#services header {
     margin: 14px 7px 7px 7px;
     padding: 12.5px;
     border-radius: 10px;
     color: var(--color8);
 }
 
-section#services div#encabezado p span {
+section#services header p span {
     display: inline;
 }
 
 @media (min-width: 738px) {
-    section#services div#encabezado p span {
+    section#services header p span {
         display: block;
     }
 }
-
-/* Tarjetas */
 
 .card-content {
     padding: 2em 1.5em;
