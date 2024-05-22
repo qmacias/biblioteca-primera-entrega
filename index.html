@@ -79,9 +79,7 @@
                         </span>
                     </p>
 
-                    <a id="call-to-action" class="box border bd3" href="#inventory" tabindex="7">
-                        Explorar la colección
-                    </a>
+                    <a id="call-to-action" class="box border bd3" href="#inventory">Explorar la colección</a>
                 </div>
             </section>
 
@@ -188,25 +186,6 @@
             <p>Todos los derechos reservados <span>&copy; 2024</span></p>
         </footer>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const signUpButton = document.querySelector('header#index-header nav ul li:nth-child(6) a');
-            const submitButton = document.querySelector('a#call-to-action');
-
-            document.addEventListener("keydown", function (event) {
-                if (event.key === "Tab") {
-                    if (document.activeElement === signUpButton) {
-                        event.preventDefault();
-                        submitButton.focus();
-                    } else if (document.activeElement === submitButton) {
-                        event.preventDefault();
-                        document.querySelector('header#index-header nav ul li:first-child a').focus();
-                    }
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

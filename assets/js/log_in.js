@@ -6,17 +6,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const usernameInput = document.getElementById("username");
   const passwordInput = document.getElementById("password");
 
-  const submitButton = document.querySelector('button[type="submit"]');
-  submitButton.tabIndex = 5;
+  // const submitButton = document.querySelector('button[type="submit"]');
+  // submitButton.tabIndex = 5;
 
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Tab") {
-      if (document.activeElement === passwordInput) {
-        event.preventDefault();
-        submitButton.focus();
-      }
-    }
-  });
+  // document.addEventListener("keydown", function (event) {
+  //   if (event.key === "Tab") {
+  //     if (document.activeElement === passwordInput) {
+  //       event.preventDefault();
+  //       submitButton.focus();
+  //     }
+  //   }
+  // });
 
   usernameInput.focus();
 

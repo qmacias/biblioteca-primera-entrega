@@ -11,18 +11,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const countrySelect = document.getElementById("country");
   // No hay email en el registro ?
 
-  const submitButton = document.querySelector('button[type="submit"]');
+  // const submitButton = document.querySelector('button[type="submit"]');
 
-  submitButton.tabIndex = 9;
+  // submitButton.tabIndex = 9;
 
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Tab") {
-      if (document.activeElement === countrySelect) {
-        event.preventDefault();
-        submitButton.focus();
-      }
-    }
-  });
+  // document.addEventListener("keydown", function (event) {
+  //   if (event.key === "Tab") {
+  //     if (document.activeElement === countrySelect) {
+  //       event.preventDefault();
+  //       submitButton.focus();
+  //     }
+  //   }
+  // });
 
   nameInput.focus();
 
