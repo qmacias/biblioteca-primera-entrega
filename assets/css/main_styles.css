@@ -398,21 +398,22 @@ section#hero header {
 section#hero header h1 {
     font-size: 2.5em;
     font-weight: 500;
+}
+
+section#hero header p span:first-child {
+    font-size: 1.75em;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
-section#hero header h1 span {
-    font-size: 0.75em;
-    font-weight: 400;
-}
-
 section#hero header p {
-    font-size: 1.25em;
-    font-weight: 400;
     margin-bottom: 20px;
 }
 
-section#hero header p span {
+section#hero header p span:nth-child(2),
+section#hero header p span:last-child {
+    font-size: 1.25em;
+    font-weight: 400;
     display: inline;
 }
 
@@ -427,8 +428,10 @@ section#hero header a {
     }
 }
 
-@media (min-width: 738px) {
-    section#hero header p span {
+@media (min-width: 720px) {
+
+    section#hero header p span:nth-child(2),
+    section#hero header p span:last-child {
         display: block;
     }
 }
