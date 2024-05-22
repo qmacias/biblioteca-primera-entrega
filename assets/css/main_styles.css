@@ -384,7 +384,7 @@ section#hero picture img {
     height: 100%;
 }
 
-section#hero div {
+section#hero header {
     padding: 20px;
     color: var(--color8);
     border-radius: 9px !important;
@@ -395,40 +395,40 @@ section#hero div {
     z-index: 1;
 }
 
-section#hero div h1 {
+section#hero header h1 {
     font-size: 2.5em;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-section#hero div h1 span {
+section#hero header h1 span {
     font-size: 0.75em;
     font-weight: 400;
 }
 
-section#hero div p {
+section#hero header p {
     font-size: 1.25em;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-section#hero div p span {
+section#hero header p span {
     display: inline;
 }
 
-section#hero div a {
+section#hero header a {
     font-size: 1.1em;
     padding: 10px 20px;
 }
 
 @media (min-width: 736px) {
-    section#hero div {
+    section#hero header {
         flex-basis: 100%;
     }
 }
 
 @media (min-width: 738px) {
-    section#hero div p span {
+    section#hero header p span {
         display: block;
     }
 }

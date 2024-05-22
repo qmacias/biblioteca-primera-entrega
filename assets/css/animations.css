@@ -55,14 +55,14 @@ header#index-header nav ul li:last-child a:hover {
     Hero    
 ----------*/
 
-section#hero div a {
+section#hero header a {
     color: whitesmoke;
     background-color: var(--color6);
     box-shadow: 0px 2px 15px -3px rgba(0, 0, 0, 0.1), 2px 0px 15px -3px rgba(0, 0, 0, 0.1);
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.6s ease-in-out;
 }
 
-section#hero div a:hover {
+section#hero header a:hover {
     color: white;
     background-color: var(--color5);
     box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.1), 8px 0px 15px -3px rgba(0, 0, 0, 0.1);
