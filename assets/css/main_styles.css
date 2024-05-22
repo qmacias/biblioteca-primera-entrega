@@ -365,6 +365,16 @@ header#index-header nav ul li:last-child {
 section#hero {
     position: relative;
     padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+section#hero picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 section#hero picture img {
@@ -372,8 +382,6 @@ section#hero picture img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
 }
 
 section#hero div {
@@ -384,6 +392,7 @@ section#hero div {
     justify-content: center;
     background-color: rgba(169, 214, 229, 0.8);
     backdrop-filter: blur(5px);
+    z-index: 1;
 }
 
 section#hero div h1 {
