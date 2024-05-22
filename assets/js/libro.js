@@ -1,21 +1,20 @@
 export default class Libro {
-    #pathPortada;
+    #imagen;
     #titulo;
     #autor;
 
-    constructor(pathPortada, titulo, autor) {
-        this.#pathPortada = pathPortada;
+    constructor(imagen, titulo, autor) {
+        this.#imagen = imagen;
         this.#titulo = titulo;
         this.#autor = autor;
     }
 
-    //getters y setters para la modificación y visualización de datos
-    get portada() {
-        return this.#pathPortada;
+    get imagen() {
+        return this.#imagen;
     }
 
-    set portada(value) {
-        this.#pathPortada = value;
+    set imagen(value) {
+        this.#imagen = value;
     }
 
     get titulo() {
