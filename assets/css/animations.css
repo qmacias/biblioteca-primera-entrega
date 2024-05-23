@@ -10,7 +10,7 @@ header#form-header,
 footer,
 section#hero,
 section#inventory figure,
-.card-content {
+section#services li {
     box-shadow: 0px 2px 15px -3px rgba(0, 0, 0, 0.1), 2px 0px 15px -3px rgba(0, 0, 0, 0.2);
 }
 

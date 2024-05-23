@@ -507,21 +507,11 @@ section#services header p span {
     display: inline;
 }
 
-@media (min-width: 738px) {
-    section#services header p span {
-        display: block;
-    }
-}
-
-.card-content {
+section#services ul li {
+    flex: 1 1 0;
     padding: 2em 1.5em;
     align-items: center;
     justify-content: center;
-    background-color: var(--color1);
-}
-
-section#services ul li {
-    flex: 1 1 0;
 }
 
 section#services ul li figure i {
@@ -546,6 +536,12 @@ section#services ul li p {
 @media (min-width: 450px) {
     section#services ul li {
         flex-basis: 47.5%;
+    }
+}
+
+@media (min-width: 738px) {
+    section#services header p span {
+        display: block;
     }
 }
 
