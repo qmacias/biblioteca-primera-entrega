@@ -276,36 +276,6 @@ header#index-header {
     border-radius: 10px;
 }
 
-/* Biblioteca Online */
-header#index-header nav ul li:first-child {
-    order: 1;
-}
-
-/* Inventario */
-header#index-header nav ul li:nth-child(2) {
-    order: 2;
-}
-
-/* Servicios */
-header#index-header nav ul li:nth-child(3) {
-    order: 3;
-}
-
-/* Contacto */
-header#index-header nav ul li:nth-child(4) {
-    order: 4;
-}
-
-/* Ingresar */
-header#index-header nav ul li:nth-child(5) {
-    order: 5;
-}
-
-/* Registrarse */
-header#index-header nav ul li:last-child {
-    order: 6;
-}
-
 @media (min-width: 450px) {
 
     header#index-header nav ul li:first-child,
@@ -550,31 +520,31 @@ section#services header p span {
     background-color: var(--color1);
 }
 
-div#cards i {
+section#services ul li {
+    flex: 1 1 0;
+}
+
+section#services ul li i {
     font-size: 2.5em;
     margin-bottom: 0.1em;
     color: var(--color8);
 }
 
-div#cards h3 {
+section#services ul li h3 {
     font-size: 20px;
     font-weight: 600;
     margin: 0.5em 0;
     color: var(--color8);
 }
 
-div#cards p {
+section#services ul li p {
     font-size: 15px;
     line-height: 1.6;
     color: var(--color8);
 }
 
-div#cards div {
-    flex: 1 1 0;
-}
-
 @media (min-width: 450px) {
-    div#cards div {
+    section#services ul li {
         flex-basis: 47.5%;
     }
 }
@@ -584,12 +554,12 @@ div#cards div {
         height: 80.3vh;
     } */
 
-    div#cards {
+    section#services ul {
         height: 80.3vh;
         /* Reajustar en base al contenido */
     }
 
-    div#cards div {
+    section#services ul li {
         flex-basis: 30%;
     }
 }
