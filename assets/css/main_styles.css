@@ -524,7 +524,7 @@ section#services ul li {
     flex: 1 1 0;
 }
 
-section#services ul li i {
+section#services ul li figure i {
     font-size: 2.5em;
     margin-bottom: 0.1em;
     color: var(--color8);
