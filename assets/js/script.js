@@ -2,9 +2,6 @@ import Link from "./link.js"
 import Libro from "./libro.js"
 import Imagen from "./imagen.js"
 
-//Arreglar: Poner un boton en log_in.html para que el usuario pueda volver a index.html en caso de no querer ingresar, y ser invitado
-//Arreglar: Poner un boton en sign_up.html para que el usuario pueda volver a index.html en caso de no querer registrarse, y ser invitado
-
 document.addEventListener("DOMContentLoaded", function () {
     cargarLinks();
     cargarLibros();
@@ -206,7 +203,7 @@ function cargarLibros() {
         `./assets/img/book_13/srcset/book_13_w_900.webp 900w,
         ./assets/img/book_13/srcset/book_13_w_812.webp 812w,
         ./assets/img/book_13/srcset/book_13_w_661.webp 661w,
-        ./assets/img/book_13/srcset/book_13_w_357.webp 357w,
+        ./assets/img/book_13/srcset/book_13_w_353.webp 357w,
         ./assets/img/book_13/srcset/book_13_w_200.webp 200w`
     );
 
