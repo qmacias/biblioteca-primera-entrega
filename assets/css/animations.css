@@ -1,7 +1,8 @@
 a:focus,
 input:focus,
 button:focus,
-select:focus {
+select:focus,
+textarea:focus {
     outline: 2px solid var(--color3);
 }
 
@@ -142,7 +143,8 @@ header#form-header nav ul li:last-child a:hover {
 }
 
 form#login-form button,
-form#signup-form button {
+form#signup-form button,
+form#contact-form button {
     color: whitesmoke;
     background-color: var(--color4);
     box-shadow: 0px 2px 15px -3px rgba(0, 0, 0, 0.1), 2px 0px 15px -3px rgba(0, 0, 0, 0.1);
@@ -150,7 +152,8 @@ form#signup-form button {
 }
 
 form#login-form button:hover,
-form#signup-form button:hover {
+form#signup-form button:hover,
+form#contact-form button:hover {
     color: white;
     background-color: var(--color5);
     box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.1), 8px 0px 15px -3px rgba(0, 0, 0, 0.1);

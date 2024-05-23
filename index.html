@@ -24,6 +24,81 @@
     <script type="module" src="./assets/js/link.js"></script>
     <script type="module" src="./assets/js/libro.js"></script>
     <script type="module" src="./assets/js/script.js"></script>
+
+    <style>
+        /*-------------
+            Contact    
+        -------------*/
+
+        section#contact header {
+            margin: 14px 7px 7px 7px;
+            padding: 12.5px;
+            border-radius: 10px;
+            color: var(--color8);
+        }
+
+        section#contact header p span {
+            display: inline;
+        }
+
+        form#contact-form {
+            width: 50%;
+            margin: 7px auto;
+        }
+
+        form#contact-form button {
+            font-size: 1rem;
+        }
+
+        form#contact-form h2 {
+            margin-bottom: 5px;
+            color: var(--color5);
+        }
+
+        form#contact-form input {
+            color: var(--color6);
+        }
+
+        form#contact-form button,
+        form#contact-form input::placeholder,
+        form#contact-form textarea::placeholder {
+            font-family: Inter, sans-serif;
+        }
+
+        form#contact-form input::placeholder,
+        form#contact-form textarea::placeholder {
+            color: var(--color4);
+        }
+
+        form#contact-form textarea {
+            resize: vertical;
+        }
+
+        form#contact-form label {
+            opacity: 0.8;
+            color: white;
+            background-color: var(--color5);
+            box-shadow: 0px 2px 15px -3px rgba(0, 0, 0, 0.1), 2px 0px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (min-width: 450px) {
+            section#contact form#contact-form div {
+                flex-basis: 100%;
+            }
+        }
+
+        @media (min-width: 738px) {
+            section#contact header p span {
+                display: block;
+            }
+        }
+
+        @media (min-width: 875px) {
+            section#contact form#contact-form div {
+                flex-basis: 50%;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg2">
@@ -203,6 +278,65 @@
                         </article>
                     </li>
                 </ul>
+            </section>
+
+            <section id="contact">
+                <header class="flex col bg1 border bd3">
+                    <h2>Contacto</h2>
+
+                    <p>
+                        ¿Tienes alguna pregunta o sugerencia?
+
+                        <span>
+                            ¡No lo dudes en contactarte! Estamos aquí para ayudarte.
+                        </span>
+                    </p>
+                </header>
+
+                <div class="box bg1 border bd3" style="margin-top: 14px;">
+                    <form id="contact-form" class="flex col" action="./index.html" method="get">
+                        <div class="flex col row">
+                            <div class="flex col">
+                                <label class="box border bd3" for="name">Nombre</label>
+
+                                <input class="box bg1 border bd3" style="padding: 10.5px;" type="text" id="name"
+                                    name="name" placeholder="Nombre" required>
+                            </div>
+
+                            <div class="flex col">
+                                <label class="box border bd3" for="surname">Apellido</label>
+
+                                <input class="box bg1 border bd3" style="padding: 10.5px;" type="text" id="surname"
+                                    name="surname" placeholder="Apellido" required>
+                            </div>
+
+                            <div class="flex col">
+                                <label class="box border bd3" for="email">Correo</label>
+
+                                <input class="box bg1 border bd3" style="padding: 10.5px;" type="email" id="email"
+                                    name="email" placeholder="Correo" required>
+                            </div>
+
+                            <div class="flex col">
+                                <label class="box border bd3" for="subject">Asunto</label>
+
+                                <input class="box bg1 border bd3" style="padding: 10.5px;" type="text" id="subject"
+                                    name="subject" placeholder="Asunto" required>
+                            </div>
+                        </div>
+
+                        <div class="flex col">
+                            <label class="box border bd3" for="message">Mensaje</label>
+
+                            <textarea class="box bg1 border bd3" style="padding: 10.5px;" id="message" name="message"
+                                placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+
+                        <div class="flex col">
+                            <button class="box border bd3" style="padding: 9px;" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
 
