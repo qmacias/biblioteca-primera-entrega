@@ -40,10 +40,10 @@ function cargarLibros() {
 
     const imagen1 = new Imagen(
         "./assets/img/book_1/srcset/book_1_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 841px) 841px,
-        (min-width: 634px) 634px,
-        (min-width: 371px) 371px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 841px) 841px,
+        (max-width: 634px) 634px,
+        (max-width: 371px) 371px, 200px`,
         `./assets/img/book_1/srcset/book_1_w_900.webp 900w,
         ./assets/img/book_1/srcset/book_1_w_841.webp 841w,
         ./assets/img/book_1/srcset/book_1_w_634.webp 634w,
@@ -53,10 +53,10 @@ function cargarLibros() {
 
     const imagen2 = new Imagen(
         "./assets/img/book_2/srcset/book_2_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 819px) 819px,
-        (min-width: 624px) 624px,
-        (min-width: 341px) 341px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 819px) 819px,
+        (max-width: 624px) 624px,
+        (max-width: 341px) 341px, 200px`,
         `./assets/img/book_2/srcset/book_2_w_900.webp 900w,
         ./assets/img/book_2/srcset/book_2_w_819.webp 819w,
         ./assets/img/book_2/srcset/book_2_w_624.webp 624w,
@@ -66,10 +66,10 @@ function cargarLibros() {
 
     const imagen3 = new Imagen(
         "./assets/img/book_3/srcset/book_3_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 808px) 808px,
-        (min-width: 696px) 696px,
-        (min-width: 355px) 355px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 808px) 808px,
+        (max-width: 696px) 696px,
+        (max-width: 355px) 355px, 200px`,
         `./assets/img/book_3/srcset/book_3_w_900.webp 900w,
         ./assets/img/book_3/srcset/book_3_w_808.webp 808w,
         ./assets/img/book_3/srcset/book_3_w_696.webp 696w,
@@ -79,10 +79,10 @@ function cargarLibros() {
 
     const imagen4 = new Imagen(
         "./assets/img/book_4/srcset/book_4_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 838px) 838px,
-        (min-width: 658px) 658px,
-        (min-width: 307px) 307px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 838px) 838px,
+        (max-width: 658px) 658px,
+        (max-width: 307px) 307px, 200px`,
         `./assets/img/book_4/srcset/book_4_w_900.webp 900w,
         ./assets/img/book_4/srcset/book_4_w_838.webp 838w,
         ./assets/img/book_4/srcset/book_4_w_658.webp 658w,
@@ -92,10 +92,10 @@ function cargarLibros() {
 
     const imagen5 = new Imagen(
         "./assets/img/book_5/srcset/book_5_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 830px) 830px,
-        (min-width: 662px) 662px,
-        (min-width: 368px) 368px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 830px) 830px,
+        (max-width: 662px) 662px,
+        (max-width: 368px) 368px, 200px`,
         `./assets/img/book_5/srcset/book_5_w_900.webp 900w,
         ./assets/img/book_5/srcset/book_5_w_830.webp 830w,
         ./assets/img/book_5/srcset/book_5_w_662.webp 662w,
@@ -105,10 +105,10 @@ function cargarLibros() {
 
     const imagen6 = new Imagen(
         "./assets/img/book_6/srcset/book_6_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 836px) 836px,
-        (min-width: 649px) 649px,
-        (min-width: 379px) 379px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 836px) 836px,
+        (max-width: 649px) 649px,
+        (max-width: 379px) 379px, 200px`,
         `./assets/img/book_6/srcset/book_6_w_900.webp 900w,
         ./assets/img/book_6/srcset/book_6_w_836.webp 836w,
         ./assets/img/book_6/srcset/book_6_w_649.webp 649w,
@@ -118,10 +118,10 @@ function cargarLibros() {
 
     const imagen7 = new Imagen(
         "./assets/img/book_7/srcset/book_7_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 826px) 826px,
-        (min-width: 611px) 611px,
-        (min-width: 342px) 342px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 826px) 826px,
+        (max-width: 611px) 611px,
+        (max-width: 342px) 342px, 200px`,
         `./assets/img/book_7/srcset/book_7_w_900.webp 900w,
         ./assets/img/book_7/srcset/book_7_w_826.webp 826w,
         ./assets/img/book_7/srcset/book_7_w_611.webp 611w,
@@ -131,10 +131,10 @@ function cargarLibros() {
 
     const imagen8 = new Imagen(
         "./assets/img/book_8/srcset/book_8_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 837px) 837px,
-        (min-width: 613px) 613px,
-        (min-width: 384px) 384px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 837px) 837px,
+        (max-width: 613px) 613px,
+        (max-width: 384px) 384px, 200px`,
         `./assets/img/book_8/srcset/book_8_w_900.webp 900w,
         ./assets/img/book_8/srcset/book_8_w_837.webp 837w,
         ./assets/img/book_8/srcset/book_8_w_613.webp 613w,
@@ -144,10 +144,10 @@ function cargarLibros() {
 
     const imagen9 = new Imagen(
         "./assets/img/book_9/srcset/book_9_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 810px) 810px,
-        (min-width: 686px) 686px,
-        (min-width: 384px) 384px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 810px) 810px,
+        (max-width: 686px) 686px,
+        (max-width: 384px) 384px, 200px`,
         `./assets/img/book_9/srcset/book_9_w_900.webp 900w,
         ./assets/img/book_9/srcset/book_9_w_810.webp 810w,
         ./assets/img/book_9/srcset/book_9_w_686.webp 686w,
@@ -157,10 +157,10 @@ function cargarLibros() {
 
     const imagen10 = new Imagen(
         "./assets/img/book_10/srcset/book_10_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 812px) 812px,
-        (min-width: 622px) 622px,
-        (min-width: 326px) 326px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 812px) 812px,
+        (max-width: 622px) 622px,
+        (max-width: 326px) 326px, 200px`,
         `./assets/img/book_10/srcset/book_10_w_900.webp 900w,
         ./assets/img/book_10/srcset/book_10_w_812.webp 812w,
         ./assets/img/book_10/srcset/book_10_w_622.webp 622w,
@@ -170,10 +170,10 @@ function cargarLibros() {
 
     const imagen11 = new Imagen(
         "./assets/img/book_11/srcset/book_11_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 847px) 847px,
-        (min-width: 673px) 673px,
-        (min-width: 335px) 335px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 847px) 847px,
+        (max-width: 673px) 673px,
+        (max-width: 335px) 335px, 200px`,
         `./assets/img/book_11/srcset/book_11_w_900.webp 900w,
         ./assets/img/book_11/srcset/book_11_w_847.webp 847w,
         ./assets/img/book_11/srcset/book_11_w_673.webp 673w,
@@ -183,10 +183,10 @@ function cargarLibros() {
 
     const imagen12 = new Imagen(
         "./assets/img/book_12/srcset/book_12_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 849px) 849px,
-        (min-width: 622px) 622px,
-        (min-width: 357px) 357px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 849px) 849px,
+        (max-width: 622px) 622px,
+        (max-width: 357px) 357px, 200px`,
         `./assets/img/book_12/srcset/book_12_w_900.webp 900w,
         ./assets/img/book_12/srcset/book_12_w_849.webp 849w,
         ./assets/img/book_12/srcset/book_12_w_622.webp 622w,
@@ -196,10 +196,10 @@ function cargarLibros() {
 
     const imagen13 = new Imagen(
         "./assets/img/book_13/srcset/book_13_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 812px) 812px,
-        (min-width: 661px) 661px,
-        (min-width: 353px) 353px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 812px) 812px,
+        (max-width: 661px) 661px,
+        (max-width: 353px) 353px, 200px`,
         `./assets/img/book_13/srcset/book_13_w_900.webp 900w,
         ./assets/img/book_13/srcset/book_13_w_812.webp 812w,
         ./assets/img/book_13/srcset/book_13_w_661.webp 661w,
@@ -209,10 +209,10 @@ function cargarLibros() {
 
     const imagen14 = new Imagen(
         "./assets/img/book_14/srcset/book_14_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 804px) 804px,
-        (min-width: 613px) 613px,
-        (min-width: 347px) 347px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 804px) 804px,
+        (max-width: 613px) 613px,
+        (max-width: 347px) 347px, 200px`,
         `./assets/img/book_14/srcset/book_14_w_900.webp 900w,
         ./assets/img/book_14/srcset/book_14_w_804.webp 804w,
         ./assets/img/book_14/srcset/book_14_w_613.webp 613w,
@@ -222,10 +222,10 @@ function cargarLibros() {
 
     const imagen15 = new Imagen(
         "./assets/img/book_15/srcset/book_15_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 829px) 829px,
-        (min-width: 652px) 652px,
-        (min-width: 326px) 326px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 829px) 829px,
+        (max-width: 652px) 652px,
+        (max-width: 326px) 326px, 200px`,
         `./assets/img/book_15/srcset/book_15_w_900.webp 900w,
         ./assets/img/book_15/srcset/book_15_w_829.webp 829w,
         ./assets/img/book_15/srcset/book_15_w_652.webp 652w,
@@ -235,10 +235,10 @@ function cargarLibros() {
 
     const imagen16 = new Imagen(
         "./assets/img/book_16/srcset/book_16_w_900.webp",
-        `(min-width: 900px) 900px,
-        (min-width: 835px) 835px,
-        (min-width: 594px) 594px,
-        (min-width: 422px) 422px, 200px`,
+        `(max-width: 900px) 900px,
+        (max-width: 835px) 835px,
+        (max-width: 594px) 594px,
+        (max-width: 422px) 422px, 200px`,
         `./assets/img/book_16/srcset/book_16_w_900.webp 900w,
         ./assets/img/book_16/srcset/book_16_w_835.webp 835w,
         ./assets/img/book_16/srcset/book_16_w_594.webp 594w,
@@ -252,7 +252,7 @@ function cargarLibros() {
     arrayLibros.push(new Libro(imagen4, "After Annie", "Anna Quindlen"));
     arrayLibros.push(new Libro(imagen5, "The Lord of The Ring", "J.R.R. Tolkien"));
     arrayLibros.push(new Libro(imagen6, "Mercy and Grace", "Anoop Judge"));
-    arrayLibros.push(new Libro(imagen7, "It Ends with Us", "Colleen Hoover."));
+    arrayLibros.push(new Libro(imagen7, "It Ends with Us", "Colleen Hoover"));
     arrayLibros.push(new Libro(imagen8, "The Game and Other Stories", "Joe Baldwin"));
     arrayLibros.push(new Libro(imagen9, "A Wrinkle in Time", "Madeleine L'engle"));
     arrayLibros.push(new Libro(imagen10, "A Great Country", "Shilpi Somaya Gouda"));
