@@ -2,11 +2,13 @@ import Link from "./link.js"
 import Libro from "./libro.js"
 import Imagen from "./imagen.js"
 import Servicio from "./servicio.js";
+import { Source, SourceList, DefaultImg, Ilustracion } from "./ilustracion.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     cargarLinks();
     cargarLibros();
     cargarServicios();
+    cargarIlustracion();
 });
 
 function cargarLinks() {
@@ -323,4 +325,24 @@ function cargarServicios() {
     }
 
     document.getElementById("ulColeccionServicios").innerHTML = serviciosInnerHTML;
+}
+
+function cargarIlustracion() {
+    const arraySources = [];
+    const sourceType = "image/webp";
+
+    arraySources.push(new Source(sourceType, "(max-width: 1400px)", "./assets/img/hero/srcset/hero_w_1400.webp"));
+    arraySources.push(new Source(sourceType, "(max-width: 1226px)", "./assets/img/hero/srcset/hero_w_1226.webp"));
+    arraySources.push(new Source(sourceType, "(max-width: 1044px)", "./assets/img/hero/srcset/hero_w_1044.webp"));
+    arraySources.push(new Source(sourceType, "(max-width: 861px)", "./assets/img/hero/srcset/hero_w_861.webp"));
+    arraySources.push(new Source(sourceType, "(max-width: 670px)", "./assets/img/hero/srcset/hero_w_670.webp"));
+    arraySources.push(new Source(sourceType, "(max-width: 492px)", "./assets/img/hero/srcset/hero_w_492.webp"));
+    arraySources.push(new Source(sourceType, "(max-width: 200px)", "./assets/img/hero/srcset/hero_w_200.webp"));
+
+    const sourceList = new SourceList(arraySources);
+    const defaultImg = new DefaultImg("./assets/img/hero/srcset/hero_w_1400.webp", "An open book with a radiant light shining upon it, illuminating its pages.");
+
+    const ilustracion = new Ilustracion(sourceList, defaultImg);
+
+    document.getElementById("pictureIlustracionHero").innerHTML = ilustracion.renderHtml();
 }
