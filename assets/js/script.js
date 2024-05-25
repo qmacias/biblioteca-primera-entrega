@@ -1,10 +1,12 @@
 import Link from "./link.js"
 import Libro from "./libro.js"
 import Imagen from "./imagen.js"
+import Servicio from "./servicio.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     cargarLinks();
     cargarLibros();
+    cargarServicios();
 });
 
 function cargarLinks() {
@@ -288,4 +290,37 @@ function cargarLibros() {
     }
 
     document.getElementById("ulColeccionLibros").innerHTML = librosInnerHTML;
+}
+
+function cargarServicios() {
+    let arrayServicios = [];
+
+    arrayServicios.push(new Servicio("fa fa-bookmark", "Recomendaciones", "Recibe sugerencias de lectura en base a tus intereses y preferencias, para que descubras nuevas obras cautivadoras."));
+    arrayServicios.push(new Servicio("fa fa-headphones", "Audiolibros", "Disfruta de tus libros favoritos en formato audio, ideal para cuando viajas, haces ejercicio o simplemente te relajas."));
+    arrayServicios.push(new Servicio("fa fa-users", "Clubes de lectura", "Únete a nuestra comunidad de lectores, comparte tus opiniones y descubre nuevas perspectivas sobre tus libros favoritos."));
+    arrayServicios.push(new Servicio("fa fa-laptop", "Lecturas en línea", "Accede a nuestra amplia selección de libros electrónicos desde cualquier dispositivo, sin necesidad de descargas adicionales."));
+    arrayServicios.push(new Servicio("fa fa-cloud-download", "Recursos digitales", "Explora nuestro catálogo de recursos digitales exclusivos, como entrevistas con autores, guías de lectura y mucho más."));
+    arrayServicios.push(new Servicio("fa fa-comments", "Asistencia 24/7", "Nuestro equipo de expertos estará disponible para brindarte asesoramiento y responder cualquier pregunta que tengas."));
+
+    let serviciosInnerHTML = "";
+
+    for (let servicio of arrayServicios) {
+        let servicioActual = `
+            <li class="flex box bg1 border bd3">
+                <article class="flex col">
+                    <h3 class="order-2">${servicio.nombre}</h3>
+
+                    <figure class="order-1">
+                        <i class="${servicio.icono}"></i>
+                    </figure>
+
+                    <p class="order-3">${servicio.descripcion}</p>
+                </article>
+            </li>
+        `;
+
+        serviciosInnerHTML += servicioActual;
+    }
+
+    document.getElementById("ulColeccionServicios").innerHTML = serviciosInnerHTML;
 }
