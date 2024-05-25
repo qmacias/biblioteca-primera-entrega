@@ -1,8 +1,8 @@
-import Link from "./link.js"
-import Libro from "./libro.js"
-import Imagen from "./imagen.js"
-import Servicio from "./servicio.js";
-import { Source, SourceList, DefaultImg, Ilustracion } from "./ilustracion.js";
+import Link from "./modelos/link.js"
+import Libro from "./modelos/libro.js"
+import Imagen from "./modelos/imagen.js"
+import Servicio from "./modelos/servicio.js";
+import { Source, SourceList, DefaultImg, Ilustracion } from "./modelos/ilustracion.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     cargarLinks();
@@ -329,20 +329,62 @@ function cargarServicios() {
 
 function cargarIlustracion() {
     const arraySources = [];
-    const sourceType = "image/webp";
 
-    arraySources.push(new Source(sourceType, "(max-width: 1400px)", "./assets/img/hero/srcset/hero_w_1400.webp"));
-    arraySources.push(new Source(sourceType, "(max-width: 1226px)", "./assets/img/hero/srcset/hero_w_1226.webp"));
-    arraySources.push(new Source(sourceType, "(max-width: 1044px)", "./assets/img/hero/srcset/hero_w_1044.webp"));
-    arraySources.push(new Source(sourceType, "(max-width: 861px)", "./assets/img/hero/srcset/hero_w_861.webp"));
-    arraySources.push(new Source(sourceType, "(max-width: 670px)", "./assets/img/hero/srcset/hero_w_670.webp"));
-    arraySources.push(new Source(sourceType, "(max-width: 492px)", "./assets/img/hero/srcset/hero_w_492.webp"));
-    arraySources.push(new Source(sourceType, "(max-width: 200px)", "./assets/img/hero/srcset/hero_w_200.webp"));
+    arraySources.push(
+        new Source(
+            "image/webp",
+            "(max-width: 1400px)",
+            "./assets/img/hero/srcset/hero_w_1400.webp")
+    );
 
-    const sourceList = new SourceList(arraySources);
-    const defaultImg = new DefaultImg("./assets/img/hero/srcset/hero_w_1400.webp", "An open book with a radiant light shining upon it, illuminating its pages.");
+    arraySources.push(
+        new Source(
+            "image/webp",
+            "(max-width: 1226px)",
+            "./assets/img/hero/srcset/hero_w_1226.webp")
+    );
 
-    const ilustracion = new Ilustracion(sourceList, defaultImg);
+    arraySources.push(
+        new Source(
+            "image/webp",
+            "(max-width: 1044px)",
+            "./assets/img/hero/srcset/hero_w_1044.webp")
+    );
+
+    arraySources.push(
+        new Source(
+            "image/webp",
+            "(max-width: 861px)",
+            "./assets/img/hero/srcset/hero_w_861.webp")
+    );
+
+    arraySources.push(
+        new Source(
+            "image/webp",
+            "(max-width: 670px)",
+            "./assets/img/hero/srcset/hero_w_670.webp")
+    );
+
+    arraySources.push(
+        new Source(
+            "image/webp",
+            "(max-width: 492px)",
+            "./assets/img/hero/srcset/hero_w_492.webp")
+    );
+
+    arraySources.push(
+        new Source(
+            "image/webp",
+            "(max-width: 200px)",
+            "./assets/img/hero/srcset/hero_w_200.webp")
+    );
+
+    const ilustracion = new Ilustracion(
+        new SourceList(arraySources),
+        new DefaultImg("./assets/img/hero/srcset/hero_w_1400.webp",
+            "An open book with a radiant light shining upon it, illuminating its pages."
+        )
+    );
 
     document.getElementById("pictureIlustracionHero").innerHTML = ilustracion.renderHtml();
 }
